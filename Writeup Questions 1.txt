@@ -1,0 +1,9 @@
+1. What are the considerations you had to include in your operator= function?
+	Self-assignment, just in case, and to copy the variables from the assigned class to make sure 	they match.
+2. What is the similarity and difference between the copy constructor and the operator=	functions?
+	Because the copy constructor, by default, returns the this pointer, self-assignment checking 	was unneeded, nor was the return statement. However, the rest of the code was identical.
+3. What steps did you take to ensure no memory leaks?
+	Any time the size of the array needed to change, it was erased and remade. Nothing was left 	up to the compiler to automatically delete, including the temporary array
+4. In terms of big O how long would it take to find an element of this array? How could this be improved? What would the expression become?
+	Assuming the search begins at the beginning of the array, it would be O(n), because of the 	need to search every element, in order, to find what it is looking for. It could be improved by 	sorting the array, then doing a binary search on the sorted array. This would be O(log(n()).
+
