@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{DD940404-A6FE-40F6-BE9A-A5046D56E3E2}</ProjectGuid>
-    <RootNamespace>Assignment1</RootNamespace>
+    <ProjectGuid>{03E13C3F-D906-42C2-AD2C-1BED37666AD7}</ProjectGuid>
+    <RootNamespace>Assignment3</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -64,13 +64,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Array.h" />
+    <ClInclude Include="Classes.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Array.inc" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Driver.cpp" />
+    <None Include="LinkedList.inc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
